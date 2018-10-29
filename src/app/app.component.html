@@ -2,22 +2,45 @@
   <span>Angular Stocks</span>
 </mat-toolbar>
 
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title>Realtime</mat-card-title>
-    <mat-card-subtitle>share prices</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/stocktickerboard_600x400.jpg" alt="Realtime share prices">
-  <mat-card-content>
-    <p>
-    See the realtime share prices.
-    </p>
-  </mat-card-content>
-  <!-- <mat-card-actions>
-    <button mat-raised-button color="primary">Search</button>
-  </mat-card-actions> -->
-</mat-card>
+<mat-grid-list cols="2" rowHeight="1:1">
+<mat-grid-tile>
+  <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Share market</mat-card-title>
+        <mat-card-subtitle>Realtime share prices</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/stocktickerboard_600x400.jpg" alt="Realtime share prices">
+      <mat-card-content>
+        <p>
+        See the realtime share prices.
+        </p>
+      </mat-card-content>
+      <!-- <mat-card-actions>
+        <button mat-raised-button color="primary">Search</button>
+      </mat-card-actions> -->
+  </mat-card>
+</mat-grid-tile>
 
+
+<mat-grid-tile>
+  <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Crypto</mat-card-title>
+        <mat-card-subtitle>Cypto exchange rates</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://media.wired.com/photos/5b3174bb440082328b06c9c7/master/w_582,c_limit/AndreessenHorowitz-Crypto-Biz-FINAL.jpg" alt="crypto exchange rates">
+      <mat-card-content>
+        <p>
+        See the realtime bitcoin and other exchange rates.
+        </p>
+      </mat-card-content>
+      <!-- <mat-card-actions>
+        <button mat-raised-button color="primary">Search</button>
+      </mat-card-actions> -->
+  </mat-card>
+</mat-grid-tile>
+
+</mat-grid-list>
 
 
 <!-- <div style="text-align:center">

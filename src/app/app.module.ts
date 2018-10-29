@@ -4,6 +4,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatRippleModule} from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 
@@ -16,7 +18,9 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
