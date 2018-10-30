@@ -10,14 +10,14 @@ justify-content: center;">
   <mat-card-content>
     
 <mat-form-field>
-  <input matInput placeholder="Coin Name" [(ngModel)]="search_term" (keyup.enter)="getPrice()">
+  <input matInput placeholder="Coin Symbol" [(ngModel)]="search_term" (keyup.enter)="getPrice()">
 </mat-form-field>
 <br/>
 <button mat-raised-button color="primary" (click)="getPrice()">Get rate</button>
 <br><br><br>
 <!-- {{data | async}} -->
 <!-- {{data['Realtime Currency Exchange Rate']['5. Exchange Rate']}} USD -->
-{{output}} USD
+{{ output | number }} USD
   </mat-card-content>
 </mat-card>
 </div>

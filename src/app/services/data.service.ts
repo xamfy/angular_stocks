@@ -10,7 +10,7 @@ export class DataService {
   // API_URL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=JUBLFOOD.NSE&apikey=YOUR_API_KEY';
   API_URL_CRYPTO: string;
   // https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=CNY&apikey=demo
-  API_KEY = '';
+  API_KEY = 'YOUR_API_KEY';
   constructor(private http: HttpClient) { }
 
 
