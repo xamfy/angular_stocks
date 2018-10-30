@@ -7,9 +7,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatRippleModule} from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import {AppRoutingModule} from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import {MatInputModule} from '@angular/material/input';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeCardsComponent } from './components/home-cards/home-cards.component';
@@ -33,7 +36,10 @@ import { CryptoComponent } from './components/crypto/crypto.component';
     MatGridListModule,
     MatRippleModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
