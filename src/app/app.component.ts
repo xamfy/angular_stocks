@@ -8,11 +8,7 @@ import { DataService } from './services/data.service';
 })
 export class AppComponent {
   title = 'Angular Stocks';
-  constructor(private dataService: DataService) {}
-  ngOnInit() {
-    this.dataService.getShareData().subscribe((data) => {
-       console.log(data);
-    });
-  }
+
+  constructor() {}
 
 }

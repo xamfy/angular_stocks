@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-shares',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SharesComponent implements OnInit {
 
-  constructor() { }
+  public data;
 
+  constructor(private dataService: DataService) {}
   ngOnInit() {
+    this.dataService.getShareData().subscribe((data) => {
+      this.data = data;
+      console.log(data['Time Series (Daily)']);
+    });
   }
-
 }
