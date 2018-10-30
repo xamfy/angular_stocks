@@ -10,6 +10,7 @@ export class CryptoComponent implements OnInit {
 
   public data;
   search_term: string;
+  output: string;
 
   constructor(private dataService: DataService) { }
 
@@ -20,6 +21,7 @@ export class CryptoComponent implements OnInit {
     this.dataService.getCryptoData(this.search_term).subscribe((data) => {
       console.log(data);
       this.data = data;
+      this.output = data['Realtime Currency Exchange Rate']['5. Exchange Rate'];
     });
   }
 
