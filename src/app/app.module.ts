@@ -11,10 +11,18 @@ import { HttpClientModule } from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeCardsComponent } from './components/home-cards/home-cards.component';
+import { SharesComponent } from './components/shares/shares.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomeCardsComponent,
+    SharesComponent,
+    CryptoComponent
   ],
   imports: [
     BrowserModule,
